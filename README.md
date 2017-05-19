@@ -49,8 +49,24 @@ Further reading:
 ## The Mozilla A-Frame Component Registry
 The [A-Frame Registry](https://aframe.io/aframe-registry/) has components written by the community that you can include and edit to make something new and cool. Copy the JS link and include it in a `<script>` tag in your HTML file. Now your `<a-entity>` elements have a new attribute that you can specify! 
 
-### An example of
+### Example: Try out the particle system!
+The first step in using a component from the registry is to include the .js link in a `<script>` tag. Then that component will be available for use in any `<a-entity>`. Try adding
 
+`<script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>`
+
+to your HTML head. Then, in the body, add two new instances of `<a-entity>`:
+
+      `<a-entity particle-system="preset: snow; particleCount: 10000"></a-entity>
+      <a-entity particle-system="preset: default; color: #FF6542; particleCount: 1000" position="0 0 -5"></a-entity>`
+
+Now you will be able to see stars! Try playing around with the parameters!
+
+Take a look at how some of the other entity components have been specified in this example.
+In the plane, by setting `rotation="-90 0 0">`we have said that the floor will be tilted -90 degrees along the x-axis, which makes the horizon halfway up the screen at eye level.
+In the cylinder, we set `repeat: 3 1` so that three eggs that are one egg high will wrap around the volume. We think it looks better this way!
+Finally, notice that the syntax for the texture is slightly different. We wrote `material="src:https://cdn.glitch.com/d9a68122-942c-498b-b71f-bfbce4382de7%2FIMG_0197.jpg?1495182595617"`instead of just `src=` as in the puppy example. This is because we are not using a primitive element.
+
+![It should look something like this.](https://github.com/buntel/A-Frame-How-To-Guide/blob/eggsplosion/eggstars.gif)
 
 Further reading:
 
