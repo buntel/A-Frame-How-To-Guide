@@ -40,7 +40,7 @@ Video files can also be used as textures. Try uploading a gif to your Assets fol
 geometry="thetaLength: 180"></a-videosphere>`
 
 Now you can experience the thrill of 180° of gif!
-![It should look something like this.](https://github.com/buntel/A-Frame-How-To-Guide/blob/glitch/puppygif.gif)
+![It should look something like this.](https://github.com/buntel/A-Frame-How-To-Guide/blob/puppysphere/puppygif.gif)
 
 Further reading:
 
