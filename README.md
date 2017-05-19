@@ -24,11 +24,12 @@ A primitive is a simplified `<a-entity>` HTML element that A-Frame will generate
 
 1. They have special names like "plane" and "sky". 
 
-2. Their components are preset with default values, so you don't need to specify as much.
+2. Some of their properties (geometry and material) are preset with default values.
 
-3. when you declare one, you can use HTML attributes instead of component data and it will be mapped for you. No need to learn a new syntax if you are more familiar with writing HTML than WebGL.
+3. When you declare one, you can use HTML attributes to specify component properties.
 
-All primitive shapes have a position, scale and orientation in 3D space. You can add them into the `<a-scene>` element. Remember to add a `position: ` offset so that they won't be right on top of one another!
+### Try it out, add a primitive and texture of your own!
+All primitive shapes have a position, scale and orientation in 3D space. You can add them into the `<a-scene>` element by typing `<a-name position="# # #"></a-name>` where name is the primitive type you want to add and # are the coordinates where you want to add it. Remember to add an offset, so that your primitive elements won't all be right on top of one another at the origin! Try experimenting with some different shapes and scales!
 
 To add a texture, you first need to host the image file somewhere accessible. If you're using Glitch, just upload it to the assets page. Then add a `src=` attribute to the HTML element and include the URL to the image. The image will load as the texture.
 
@@ -39,7 +40,7 @@ Further reading:
 ## The Mozilla A-Frame Component Registry
 The [A-Frame Registry](https://aframe.io/aframe-registry/) has components written by the community that you can include and edit to make something new and cool. Copy the JS link and include it in a `<script>` tag in your HTML file. Now your `<a-entity>` elements have a new attribute that you can specify! 
 
-### Let's try an example
+### An example of
 
 
 Further reading:
