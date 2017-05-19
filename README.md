@@ -33,6 +33,15 @@ All primitive shapes have a position, scale and orientation in 3D space. You can
 
 To add a texture, you first need to host the image file somewhere accessible. If you're using Glitch, just upload it to the assets page. Then add a `src=` attribute to the HTML element and include the URL to the image. The image will load as the texture.
 
+### Example: Make a gif-o-sphere!
+Video files can also be used as textures. Try uploading a gif to your Assets folder in Glitch, copying the URL, and adding it as a src to a videosphere primitive inside your `<a-scene>`:
+
+`<a-videosphere src="https://cdn.glitch.com/10bcb705-e18f-4e0d-aeb2-c58def7ef9f6%2FIMG_2016.mp4?1495179843133"
+geometry="thetaLength: 180"></a-videosphere>`
+
+Now you can experience the thrill of 180° of gif!
+![It should look something like this.](https://github.com/buntel/A-Frame-How-To-Guide/blob/glitch/puppygif.gif)
+
 Further reading:
 
 [HTML & Primitives – A-Frame](https://aframe.io/docs/0.5.0/introduction/html-and-primitives.html)
