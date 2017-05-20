@@ -78,6 +78,9 @@ When you've ready to learn the details of how it works, start by reading the off
 
 Once you know what a component is and start thinking about [writing a component of your own, go here](https://aframe.io/docs/0.5.0/introduction/writing-a-component.html).
 
+## Hosting and playing sounds
+
+
 
 ## Using glTF and Clara.io
 
