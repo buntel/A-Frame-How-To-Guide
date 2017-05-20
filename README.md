@@ -10,6 +10,8 @@ No need to buy an expensive VR headset or subscribe to any development environme
 
 Further reading: 
 
+A-Frame was recently used as the medium for an immersive VR movie! Check it out [here](https://t.co/tX8hwAA7uU).
+
 [Building up a basic demo with A-Frame - Game development | MDN](https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_on_the_web/Building_up_a_basic_demo_with_A-Frame)
 
 [Dev.Opera — An Introduction to WebGL — Part 1](https://dev.opera.com/articles/introduction-to-webgl-part-1/#implementations)
