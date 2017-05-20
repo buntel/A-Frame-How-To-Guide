@@ -84,3 +84,8 @@ Further reading:
 [Troubleshooting and Optimizing 3D Models for A-Frame - Jared Pike](https://dev.opera.com/articles/introduction-to-webgl-part-1/#implementations)
 
 ## Using Javascript and DOM APIs
+
+A more sophisticated demonstration:
+
+In the earlier particle effects example, we changed the position attribute by a static amount. But by using JS Express we can also dynamically change the position of individual vertexes in a sphere to create a neat cloud effect. To learn more about the way this might be accomplished, check out this [blog post](https://www.clicktorelease.com/blog/vertex-displacement-noise-3d-webgl-glsl-three-js/) and view the [implementation here](https://aframe-displacement-shader.glitch.me/).
+
