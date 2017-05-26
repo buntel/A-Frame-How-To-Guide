@@ -64,7 +64,7 @@ to your HTML head. Then, in the body, add two new instances of `<a-entity>`:
 Now you will be able to see stars! Try playing around with the parameters!
 
 Take a look at how some of the other entity components have been specified in this example.
-In the plane, by setting `rotation="-90 0 0">`we have said that the floor will be tilted -90 degrees along the x-axis, which makes the horizon halfway up the screen at eye level.
+In the plane, by setting `rotation="-90 0 0">`we have said that the floor will be tilted -90 degrees along the x-axis, which makes the horizon halfway up the screen at eye level. A-Frame orients planes parallel to the XY axis by default.
 In the cylinder, we set `repeat: 3 1` so that three eggs that are one egg high will wrap around the volume. We think it looks better this way!
 Finally, notice that the syntax for the texture is slightly different. We wrote `material="src:https://cdn.glitch.com/d9a68122-942c-498b-b71f-bfbce4382de7%2FIMG_0197.jpg?1495182595617"`instead of just `src=` as in the puppy example. This is because we are not using a primitive element.
 
@@ -78,19 +78,12 @@ When you've ready to learn the details of how it works, start by reading the off
 
 Once you know what a component is and start thinking about [writing a component of your own, go here](https://aframe.io/docs/0.5.0/introduction/writing-a-component.html).
 
-## Hosting and playing sounds
+## Playing sounds
+[Freesound.org](freesound.org) is a good resource for finding audio files to add some ambience to a scene. There are two main ways to add them to the code:
 
+1. Add an `<audio>` element into `<a-assets>` to play everywhere
 
+2. Add an `<a-sound>` element into `<a-scene>`. This entity has a position attribute that can be set so that the sound gets louder and quieter based on the user distance.
 
-## Using glTF and Clara.io
-
-Further reading:
-
-[Troubleshooting and Optimizing 3D Models for A-Frame - Jared Pike](https://dev.opera.com/articles/introduction-to-webgl-part-1/#implementations)
-
-## Using Javascript and DOM APIs
-
-A more sophisticated demonstration:
-
-In the earlier particle effects example, we changed the position attribute by a static amount. But by using JS Express we can also dynamically change the position of individual vertexes in a sphere to create a neat cloud effect. To learn more about the way this might be accomplished, check out this [blog post](https://www.clicktorelease.com/blog/vertex-displacement-noise-3d-webgl-glsl-three-js/) and view the [implementation here](https://aframe-displacement-shader.glitch.me/).
-
+## Displaying Text
+The most simple and fast way to add text is with `<a-text>`. Additionally, there are customized components in the registry with alternative text presentations!
